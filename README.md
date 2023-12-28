@@ -1,9 +1,10 @@
-# KACTL
+# UPCGM Notebook
 
-This repo hosts KACTL, [KTH](https://en.wikipedia.org/wiki/KTH_Royal_Institute_of_Technology)'s ICPC team reference document.
-It consists of 25 pages of copy-pasteable C++ code, for use in ICPC-style programming competitions.
+This repo hosts UPCGM, [UPC campus Grands m=moulins](https://en.wikipedia.org/wiki/Universit%C3%A9_Paris_Cit%C3%A9)'s ICPC team reference document.
+It consists of 25 pages of copy-pasteable C++ and python code, for use in ICPC-style programming competitions.
+It's a fork from [KACTL](https://github.com/kth-competitive-programming/kactl).
 
-See [kactl.pdf](./kactl.pdf) for the final, browsable version, and [content/](./content/) for raw source code.
+See [upcgm.pdf](./upcgm.pdf) for the final, browsable version, and [content/](./content/) for raw source code.
 
 ## Aspirations
 
@@ -32,6 +33,7 @@ To build KACTL, type `make kactl` (or `make fast`) on a \*nix machine -- this wi
 (Windows might work as well, but is not tested.) `doc/README` has a few more notes about this.
 
 Tips:
+
 1. Check out what's excluded by default by running `make showexcluded`.
 The default configuration is chosen to be a reasonable balance for beginners
 and advanced teams.
@@ -50,8 +52,8 @@ Each algorithm contains a header with the author of the code, the date it
 was added, a description of the algorithm, its testing status, and preferably also
 source, license and time complexity.
 
-kactl.pdf is to be kept to 25 pages + cover page.
-Occasionally the generated kactl.pdf is committed to the repo for convenience, but not too often because it makes git operations slower.
+[upcgm.pdf](./upcgm.pdf) is to be kept to 25 pages + cover page.
+Occasionally the generated [upcgm.pdf](./upcgm.pdf) is committed to the repo for convenience, but not too often because it makes git operations slower.
 
 ## Testing
 

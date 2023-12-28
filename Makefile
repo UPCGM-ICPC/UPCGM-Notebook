@@ -1,3 +1,6 @@
+PROJECT_NAME=upcgm
+PDF_NAME=$(PROJECT_NAME).pdf
+
 LATEXCMD = pdflatex -shell-escape -output-directory build/
 export TEXINPUTS=.:content/tex/:
 export max_print_line = 1048576
@@ -7,7 +10,7 @@ help:
 	@echo ""
 	@echo "Available commands are:"
 	@echo "	make fast		- to build KACTL, quickly (only runs LaTeX once)"
-	@echo "	make kactl		- to build KACTL"
+	@echo "	make $(PROJECT_NAME)              - to build KACTL"
 	@echo "	make clean		- to clean up the build process"
 	@echo "	make veryclean		- to clean up and remove kactl.pdf"
 	@echo "	make test		- to run all the stress tests in stress-tests/"
@@ -18,20 +21,22 @@ help:
 	@echo "For more information see the file 'doc/README'"
 
 fast: | build
-	$(LATEXCMD) content/kactl.tex </dev/null
-	cp build/kactl.pdf kactl.pdf
+	$(LATEXCMD) content/$(PROJECT_NAME).tex </dev/null
+	cp build/$(PDF_NAME) $(PDF_NAME)
 
-kactl: test-session.pdf | build
-	$(LATEXCMD) content/kactl.tex && $(LATEXCMD) content/kactl.tex
-	cp build/kactl.pdf kactl.pdf
+
+
+$(PROJECT_NAME): test-session.pdf | build
+	$(LATEXCMD) content/$(PROJECT_NAME).tex && $(LATEXCMD) content/$(PROJECT_NAME).tex
+	cp build/${PDF_NAME} ${PDF_NAME}
 
 clean:
-	cd build && rm -f kactl.aux kactl.log kactl.tmp kactl.toc kactl.pdf kactl.ptc
+	cd build && rm -f $(PROJECT_NAME).aux $(PROJECT_NAME).log $(PROJECT_NAME).tmp $(PROJECT_NAME).toc $(PROJECT_NAME).pdf $(PROJECT_NAME).ptc
 
 veryclean: clean
-	rm -f kactl.pdf test-session.pdf
+	rm -f $(PDF_NAME) test-session.pdf
 
-.PHONY: help fast kactl clean veryclean
+.PHONY: help fast $(PROJECT_NAME) clean veryclean
 
 build:
 	mkdir -p build/
