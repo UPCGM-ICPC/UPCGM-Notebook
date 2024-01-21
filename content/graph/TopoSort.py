@@ -5,7 +5,7 @@
  It should be put inside the Graph class.
  * Time: $O(|V|+|E|)$
 """
-def nonRecursiveTopologicalSortUtil(self, v, visited, stack):
+def sortAux(self, v, visited, stack):
     working_stack = [(v, self.get_neighbors(v))]
     while working_stack:
         v, gen = working_stack.pop()
@@ -22,6 +22,6 @@ def topologicalSort(self):
     stack = []
     for i in range(self.v):
         if not (visited[i]):
-            self.nonRecursiveTopologicalSortUtil(i, visited, stack)
+            self.sortAux(i, visited, stack)
     stack.reverse()
     return stack
