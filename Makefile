@@ -6,13 +6,13 @@ export TEXINPUTS=.:content/tex/:
 export max_print_line = 1048576
 
 help:
-	@echo "This makefile builds KACTL (KTH Algorithm Competition Template Library)"
+	@echo "This makefile builds $(PROJECT_NAME)."
 	@echo ""
 	@echo "Available commands are:"
-	@echo "	make fast		- to build KACTL, quickly (only runs LaTeX once)"
-	@echo "	make $(PROJECT_NAME)              - to build KACTL"
+	@echo "	make fast		- to build $(PROJECT_NAME), quickly (only runs LaTeX once)"
+	@echo "	make $(PROJECT_NAME)              - to build $(PROJECT_NAME)"
 	@echo "	make clean		- to clean up the build process"
-	@echo "	make veryclean		- to clean up and remove kactl.pdf"
+	@echo "	make veryclean		- to clean up and remove $(PDF_NAME)"
 	@echo "	make test		- to run all the stress tests in stress-tests/"
 	@echo "	make test-compiles	- to test compiling all headers"
 	@echo "	make help		- to show this information"
