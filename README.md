@@ -1,6 +1,6 @@
 # UPCGM Notebook
 
-This repo hosts UPCGM, [UPC campus Grands m=moulins](https://en.wikipedia.org/wiki/Universit%C3%A9_Paris_Cit%C3%A9)'s ICPC team reference document.
+This repo hosts UPCGM, [UPC campus Grands Moulins](https://en.wikipedia.org/wiki/Universit%C3%A9_Paris_Cit%C3%A9)'s ICPC team reference document.
 It consists of 25 pages of copy-pasteable C++ and python code, for use in ICPC-style programming competitions.
 It's a fork from [KACTL](https://github.com/kth-competitive-programming/kactl).
 
