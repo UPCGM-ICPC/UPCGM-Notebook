@@ -1,12 +1,10 @@
 """ 
 * Author: Yago Iglesias
- * Date: 2016-12-15
- * License: CC0
- * Source: http://en.wikipedia.org/wiki/Floyd–Warshall_algorithm
- * Description: Calculates all-pairs shortest path in a directed graph that might have negative edge weights.
- * As output, $m[i][j]$ is set to the shortest distance between $i$ and $j$ and \texttt{INF} if no path.
- * Time: O(N^3)
- * Status: slightly tested
+* Date: 2024-01-21
+* Source: http://en.wikipedia.org/wiki/Floyd–Warshall_algorithm
+* Description: Calculates all-pairs shortest path in a directed graph that might have negative edge weights.
+* As output, $m[i][j]$ is set to the shortest distance between $i$ and $j$ and \texttt{INF} if no path.
+* Time: O(N^3)
 """
 INF = 1 << 62  # Large enough value for unreachable vertices
 def floydWarshall(self):
