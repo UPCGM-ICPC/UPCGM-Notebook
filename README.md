@@ -5,7 +5,7 @@ It consists of 25 pages of copy-pasteable C++ and python code, for use in ICPC-s
 It's a fork from [KACTL](https://github.com/kth-competitive-programming/kactl).
 
 See [upcgm.pdf](./upcgm.pdf) for the final, browsable version, and [content/](./content/) for raw source code. This pdf is not always up to date, 
-the latest version is available under the artifacts tab of the latest [CI run](https://github.com/UPCGM-ICPC/UPCGM-Notebook/actions/workflows/deply_notebook.yml)
+the latest version is available under the artifacts tab of the latest [CI run](https://github.com/UPCGM-ICPC/UPCGM-Notebook/actions/workflows/deploy_notebook.yml)
 
 ## Aspirations
 

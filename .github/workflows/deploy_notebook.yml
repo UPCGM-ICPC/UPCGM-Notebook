@@ -1,4 +1,4 @@
-name: Deply notebook ci
+name: Deploy notebook ci
 
 on:
   push:
