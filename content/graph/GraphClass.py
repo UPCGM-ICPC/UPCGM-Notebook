@@ -27,3 +27,9 @@ class Graph:
             for v in self.edges[u].keys():
                 edges.append((u, v))
         return edges
+    def get_weighted_edges(self):
+        edges = []
+        for u in self.edges.keys():
+            for v in self.edges[u].keys():
+                edges.append((u, v, self.edges[u][v]))
+        return edges
