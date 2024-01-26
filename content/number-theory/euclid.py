@@ -1,11 +1,11 @@
 """
-Author: Gabin Dudillieu
-Date: 2024-01-26
-Source: https://www.rookieslab.com/posts/extended-euclid-algorithm-to-find-gcd-bezouts-coefficients-python-cpp-code
-Description: Finds gcd, and finds two integers $x$ and $y$, such that $ax+by=\gcd(a,b)$. If
-you just need gcd, use the built in \texttt{\_\_gcd} instead.
-If $a$ and $b$ are coprime, then $x$ is the inverse of $a \pmod{b}$.
-Time: O(log(min(a, b)))
+* Author: Gabin Dudillieu
+* Date: 2024-01-26
+* Source: https://www.rookieslab.com/posts/extended-euclid-algorithm-to-find-gcd-bezouts-coefficients-python-cpp-code
+* Description: Finds gcd, and finds two integers $x$ and $y$, such that $ax+by=\gcd(a,b)$. If
+* you just need gcd, use the built in \texttt{\_\_gcd} instead.
+* If $a$ and $b$ are coprime, then $x$ is the inverse of $a \pmod{b}$.
+* Time: O(log(min(a, b)))
 """
 from math import gcd
 def get_gcd(a, b):
