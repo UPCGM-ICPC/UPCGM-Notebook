@@ -3,6 +3,7 @@
  * Source: https://en.wikipedia.org/wiki/Breadth-first_search
  * Description: Finds path between using BFS. Returns list of parent's index
  per node if path between source $s$ and sink $t$ exists, None otherwise.
+ * Time: O(V+E)
 """
 def BFS(graph, s, t):
     visited = [False for _ in range(len(graph.v))]
