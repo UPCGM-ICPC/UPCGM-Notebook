@@ -1,8 +1,8 @@
 """
  * Author: Yanis Lacenne
  * Source: https://en.wikipedia.org/wiki/Breadth-first_search
- * Description: Finds path between using BFS. Returns list of parent's index
- per node if path between source $s$ and sink $t$ exists, None otherwise.
+ * Description: Finds a path between using BFS. Returns list of parent's indexes
+ per node if a path between source $s$ and sink $t$ exists, None otherwise.
  * Time: O(V+E)
 """
 def BFS(graph, s, t):
