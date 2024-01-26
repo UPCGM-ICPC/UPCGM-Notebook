@@ -11,7 +11,6 @@ from math import gcd
 def get_gcd(a, b):
     return gcd(a, b)
 def extended_euclid_gcd(a, b):
-    # Referring to the equation ax + by = gcd(a, b), result[0] is gcd(a, b), result[1] is x, result[2] is y 
     s = 0; old_s = 1
     t = 1; old_t = 0
     r = b; old_r = a
