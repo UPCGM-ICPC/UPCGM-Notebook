@@ -2,8 +2,8 @@
  * Author: Unknown
  * Source: https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/
  * Description: Computes maximum flow. Uses weight as capacity.
- Null weight edges must already be integrated into the graph
- Add "and graph.edges[u][neighbor] > 0" in condition at line 14, BFS.py.
+ Null weighted edges must already be integrated into the graph.
+ Add "and graph.edges[u][neighbor] > 0" to the condition at line 14 in BFS.py.
  Graph is modified.
  * Time: O(VE)
 """
