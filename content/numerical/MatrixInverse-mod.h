@@ -49,3 +49,4 @@ found:
 		A[col[i]][col[j]] = tmp[i][j] % mod + (tmp[i][j] < 0 ? mod : 0);
 	return n;
 }
+	
