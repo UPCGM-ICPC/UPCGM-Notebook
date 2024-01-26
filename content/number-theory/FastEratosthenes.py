@@ -2,7 +2,7 @@
 * Author: Gabin Dudillieu
 * Date: 2024-01-26
 * Description: Prime sieve for generating all primes smaller than LIM.
-* Time: LIM=1e9 $\approx$ 1.5s
+* Time: O(N*log(log(N)))
 """
 def SieveOfEratosthenes(num):
     result = []
