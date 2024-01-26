@@ -7,3 +7,6 @@ ModSqrt.h
 Hashing-codeforces.h
 NumberTheoreticTransform.h
 MoQueries.h
+euclid.h
+CRT.h
+ModularArithmetic.h
